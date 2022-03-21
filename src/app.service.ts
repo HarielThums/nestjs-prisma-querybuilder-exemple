@@ -7,7 +7,7 @@ export class AppService {
   constructor(private readonly qb: QuerybuilderService, private readonly prisma: PrismaService) {}
 
   async get() {
-    const query = await this.qb.query();
+    const query = await this.qb.query('user');
 
     const data = await this.prisma.user.findMany(query);
 
