@@ -1,9 +1,10 @@
 {
-  "name": "@nest/prisma-querybuilder",
+  "name": "prisma-querybuilder",
   "version": "0.0.1",
+  "description": "",
   "author": "Hariel Thums",
-  "private": false,
-  "license": "MIT",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
