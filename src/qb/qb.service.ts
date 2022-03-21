@@ -1,6 +1,6 @@
 import { BadRequestException, Inject, Injectable } from '@nestjs/common';
 import { REQUEST } from '@nestjs/core';
-import { Querybuilder } from '@nestjs/prisma-query-builder';
+import { Querybuilder } from 'nestjs-prisma-querybuilder';
 import { Request } from 'express';
 import { PrismaService } from 'src/prisma.service';
 

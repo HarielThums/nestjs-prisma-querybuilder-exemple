@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { Querybuilder } from '@nestjs/prisma-query-builder';
+import { Querybuilder } from 'nestjs-prisma-querybuilder';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PrismaService } from './prisma.service';
