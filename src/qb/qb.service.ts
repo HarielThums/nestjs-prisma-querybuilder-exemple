@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { Querybuilder } from '@nestjs/prisma-query-builder';
+import { Querybuilder } from 'nestjs-prisma-querybuilder';
 
 @Injectable()
 export class QuerybuilderService {
