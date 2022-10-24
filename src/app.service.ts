@@ -10,7 +10,7 @@ export class AppService {
     const query = await this.qb.query('user');
 
     const data = await this.prisma.user.findMany(query);
-
+    
     return data;
   }
 }
