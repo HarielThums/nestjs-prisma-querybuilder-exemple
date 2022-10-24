@@ -4,46 +4,52 @@
     "colId": "cc68cb8f-39bd-46c7-a5c7-da22c55fc9d1",
     "containerId": "",
     "name": "Test",
-    "url": "localhost:3000?select=name email id &populate[0][path]=posts&populate[0][select]=title published authorId&populate[0][populate][0][path]=content&populate[0][populate][0][select]=text&filter[0][path]=name&filter[0][value]=bar, foo&page=2&limit=1",
+    "url": "localhost:3000?select=name email id&page=2",
     "method": "GET",
     "sortNum": 10000,
     "created": "2022-03-16T13:10:07.441Z",
-    "modified": "2022-10-24T12:53:07.465Z",
+    "modified": "2022-10-24T13:08:35.608Z",
     "headers": [],
     "params": [
       {
         "name": "select",
-        "value": "name email id ",
+        "value": "name email id",
         "isPath": false
       },
       {
         "name": "populate[0][path]",
         "value": "posts",
+        "isDisabled": true,
         "isPath": false
       },
       {
         "name": "populate[0][select]",
         "value": "title published authorId",
+        "isDisabled": true,
         "isPath": false
       },
       {
         "name": "populate[0][populate][0][path]",
         "value": "content",
+        "isDisabled": true,
         "isPath": false
       },
       {
         "name": "populate[0][populate][0][select]",
         "value": "text",
+        "isDisabled": true,
         "isPath": false
       },
       {
         "name": "filter[0][path]",
         "value": "name",
+        "isDisabled": true,
         "isPath": false
       },
       {
         "name": "filter[0][value]",
         "value": "bar, foo",
+        "isDisabled": true,
         "isPath": false
       },
       {
@@ -72,6 +78,68 @@
       {
         "name": "limit",
         "value": "1",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "6e68eb4f-7ebf-486b-96f5-6eae0c4eb2f2",
+    "colId": "cc68cb8f-39bd-46c7-a5c7-da22c55fc9d1",
+    "containerId": "",
+    "name": "Test populate with filter",
+    "url": "localhost:3000?select=name email id&populate[0][path]=posts&populate[0][select]=title&populate[0][filter][0][path]=id&populate[0][filter][0][value]=3&populate[0][filter][0][type]=number&populate[0][filter][1][path]=title&populate[0][filter][1][value]=bar title",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-10-24T13:33:06.278Z",
+    "modified": "2022-10-24T14:03:51.925Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "select",
+        "value": "name email id",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][path]",
+        "value": "posts",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][select]",
+        "value": "title",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][filter][0][path]",
+        "value": "id",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][filter][0][value]",
+        "value": "3",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][filter][0][operator]",
+        "value": "contains",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "populate[0][filter][0][type]",
+        "value": "number",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][filter][1][path]",
+        "value": "title",
+        "isPath": false
+      },
+      {
+        "name": "populate[0][filter][1][value]",
+        "value": "bar title",
         "isPath": false
       }
     ],
